@@ -2,8 +2,8 @@
 // Created by jacko on 20/01/17.
 //
 
-#ifndef TEST_SIMBA_LWM2MCLIENT_H
-#define TEST_SIMBA_LWM2MCLIENT_H
+#ifndef LWM2MEMBEDDED_LWM2MCLIENT_H
+#define LWM2MEMBEDDED_LWM2MCLIENT_H
 
 
 #include <IPAddress.h>
@@ -37,4 +37,4 @@ private:
 };
 
 
-#endif //TEST_SIMBA_LWM2MCLIENT_H
+#endif //LWM2MEMBEDDED_LWM2MCLIENT_H

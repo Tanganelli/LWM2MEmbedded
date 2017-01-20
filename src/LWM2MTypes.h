@@ -2,8 +2,8 @@
 // Created by jacko on 20/01/17.
 //
 
-#ifndef TEST_SIMBA_LWM2MTYPE_H
-#define TEST_SIMBA_LWM2MTYPE_H
+#ifndef LWM2MEMBEDDED_LWM2MTYPE_H
+#define LWM2MEMBEDDED_LWM2MTYPE_H
 
 
 #include <IPAddress.h>
@@ -95,4 +95,4 @@ private:
 };
 
 
-#endif //TEST_SIMBA_LWM2MTYPE_H
+#endif //LWM2MEMBEDDED_LWM2MTYPE_H

@@ -2,8 +2,8 @@
 // Created by jacko on 20/01/17.
 //
 
-#ifndef TEST_SIMBA_LWM2MRESOURCE_H
-#define TEST_SIMBA_LWM2MRESOURCE_H
+#ifndef LWM2MEMBEDDED_LWM2MRESOURCE_H
+#define LWM2MEMBEDDED_LWM2MRESOURCE_H
 
 
 #include <list>
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif //TEST_SIMBA_LWM2MRESOURCE_H
+#endif //LWM2MEMBEDDED_LWM2MRESOURCE_H
