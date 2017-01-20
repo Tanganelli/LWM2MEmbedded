@@ -27,3 +27,6 @@
 *.exe
 *.out
 *.app
+.pioenvs
+.piolibdeps
+CMakeListsPrivate.txt
