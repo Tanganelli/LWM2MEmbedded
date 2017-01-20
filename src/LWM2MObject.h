@@ -17,6 +17,25 @@ private:
     void* handlers[LWM2M_OPERATIONS_LEN];
 
     std::list<LWM2MObject> children;
+
+public:
+    char *getObjectName() const;
+
+    void setObjectName(char *ObjectName);
+
+    ObjectIDType getObjectID() const;
+
+    void setObjectID(ObjectIDType ObjectID);
+
+    const std::list<LWM2MResource> &getResources() const;
+
+    void setResources(const std::list<LWM2MResource> &Resources);
+
+    void *const *getHandlers() const;
+
+    const std::list<LWM2MObject> &getChildren() const;
+
+    void setChildren(const std::list<LWM2MObject> &children);
 };
 
 

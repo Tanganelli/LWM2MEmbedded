@@ -10,14 +10,17 @@
 #include "LWM2MBootstrap.h"
 #include "LWM2MServerObject.h"
 #include "LWM2MObject.h"
+#include "LWM2MRegistration.h"
 #include <list>
 #include <map>
+#include <memory>
+
 
 class LWM2MClient {
 private:
     std::list<LWM2MServerObject> LWM2MServers; // list of LWM2M Servers
     std::map<String, LWM2MObject> LWM2MObjects;
-
+    std::unique_ptr<LWM2MRegistration> registrationObject;
 /*
     Lwm2mBootStrapState BootStrapState;       // Current bootstrap state
     uint32_t LastBootStrapUpdate;             // Time that the last bootstrap state-machine update was performed

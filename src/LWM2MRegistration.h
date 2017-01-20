@@ -5,8 +5,11 @@
 #ifndef LWM2MEMBEDDED_LWM2MREGISTRATION_H
 #define LWM2MEMBEDDED_LWM2MREGISTRATION_H
 
-class LWM2MRegistration {
+#include "LWM2MServerObject.h"
 
+class LWM2MRegistration {
+public:
+    int LWM2Mregister(LWM2MServerObject& server);
 };
 
 

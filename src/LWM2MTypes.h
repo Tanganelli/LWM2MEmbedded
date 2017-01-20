@@ -11,6 +11,11 @@
 #define LWM2M_MAX_ID (65535)
 #define LWM2M_OPERATIONS_LEN (4)
 
+typedef int ObjectIDType;
+typedef int ObjectInstanceIDType;
+typedef int ResourceIDType;
+typedef int ResourceInstanceIDType;
+
 typedef enum
 {
     MandatoryEnum_Optional = 0,
@@ -73,14 +78,12 @@ typedef enum
 
 } LWM2MResourceType;
 
-typedef int ObjectIDType;
-typedef int ObjectInstanceIDType;
-typedef int ResourceIDType;
-typedef int ResourceInstanceIDType;
 
 class AddressType {
 private:
     IPAddress ip;
+    int port;
+
 public:
     const IPAddress &getIp() const;
 
@@ -89,9 +92,6 @@ public:
     int getPort() const;
 
     void setPort(int port);
-
-private:
-    int port;
 };
 
 

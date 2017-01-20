@@ -17,6 +17,28 @@ private:
     LWM2MOperations operations;
     std::list<LWM2MResource> children;
     LWM2MResourceType Type;
+public:
+    char *getResourceName() const;
+
+    void setResourceName(char *ResourceName);
+
+    ResourceIDType getResourceID() const;
+
+    void setResourceID(ResourceIDType ResourceID);
+
+    void *const *getHandlers() const;
+
+    LWM2MOperations getOperations() const;
+
+    void setOperations(LWM2MOperations operations);
+
+    const std::list<LWM2MResource> &getChildren() const;
+
+    void setChildren(const std::list<LWM2MResource> &children);
+
+    LWM2MResourceType getType() const;
+
+    void setType(LWM2MResourceType Type);
 };
 
 
